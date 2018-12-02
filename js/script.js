@@ -71,17 +71,17 @@ window.addEventListener('DOMContentLoaded', function () {
     function updateClock() {
       let t = getTimeRemeining(endtime);
       // days.textContent = t.d;
-      // console.log(t.h);
+      console.log(t.h);
       if (t.h.length < 2) {
         hours.textContent = '0' + t.h;
-      }//else{
-        //hours.textContent = t.h;
-      //}
+      } else {
+        hours.textContent = t.h;
+      }
       if (t.m.length < 2) {
         minutes.textContent = '0' + t.m;
-       }//else{
-      //   minutes.textContent = t.m;
-      // }
+      } else {
+        minutes.textContent = t.m;
+      }
       if (t.s.length < 2) {
         seconds.textContent = '0' + t.s;
       } else {
